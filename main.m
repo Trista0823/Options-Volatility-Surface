@@ -1,6 +1,6 @@
 clear
 warning off
-data = csvread('50etf.csv',1,0); %date s shibor
+data = csvread('50etf.csv',1,0); 
 data(:,3) = data(:,3)/100;
 data_put = csvread('put.csv',1,0); 
 %date strike p left (s shibor)
